@@ -1,4 +1,4 @@
-import { Text, View, SafeAreaView, Image, StatusBar, FlatList, ListView } from 'react-native'
+import { Text, View, SafeAreaView, Image, StatusBar, FlatList } from 'react-native'
 import { COLORS, SIZES, SHADOWS, assets, FONTS } from '../constants'
 import { CircleButton, RectButton, SubInfo, FocusedStatusBar, DetailsDesc, DetailsBid } from '../Components'
 import React from 'react';

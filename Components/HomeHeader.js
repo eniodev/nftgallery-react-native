@@ -1,5 +1,5 @@
 import { COLORS, FONTS, SIZES, assets } from "../constants"
-import {View, Text, Image, TextInput, ViewBase} from "react-native"
+import {View, Text, Image, TextInput} from "react-native"
 
 function HomeHeader({onSearch}) {
   return (
@@ -8,6 +8,7 @@ function HomeHeader({onSearch}) {
         backgroundColor: COLORS.primary,
         padding: SIZES.font
     }}>
+       
     <View style = {{
         flexDirection: "row",
         alignItems: "center",
@@ -15,14 +16,15 @@ function HomeHeader({onSearch}) {
 
 
     }}>
-            <Image 
-                source={assets.logo}
-                resizeMode= "contain"
-                style={{
-                    width: 90,
-                    height: 25
-                }}
-            />
+         <Text style={{
+            fontFamily: FONTS.bold,
+            fontSize: SIZES.extraLarge,
+            color: COLORS.white
+         }}
+         
+         >SHOTTY</Text>
+        
+          <View>
             <View  
                 style={{
                     width: 45,
@@ -40,6 +42,7 @@ function HomeHeader({onSearch}) {
                     style={{position: "absolute", width: 15, height: 15, bottom: 0, right: 0}}
                     />
             </View>
+    </View>
     </View>
 
     <View
@@ -75,7 +78,7 @@ function HomeHeader({onSearch}) {
                 alignItems: "center",
                 paddingHorizontal: SIZES.font,
                 paddingVertical: SIZES.small - 2
-
+               
 
         }}>
             <Image
@@ -86,7 +89,7 @@ function HomeHeader({onSearch}) {
                 }}
             
             />
-            <TextInput placeholder="What is your style ?"
+            <TextInput placeholder="What piece are you looking for ?"
                 style={{
                     flex: 1
                 }}
@@ -97,6 +100,7 @@ function HomeHeader({onSearch}) {
         </View>
     </View>
     </View>
+    
   )
 }
 

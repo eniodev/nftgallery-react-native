@@ -96,14 +96,14 @@ export const EthPrice = ({price}) => {
                     fontSize: SIZES.small,
                     color: COLORS.primary
                 }}>
-                    Ending in
+                    Remaining
                 </Text>
                 <Text style={{
                     fontFamily: FONTS.semiBold,
                     fontSize: SIZES.medium,
                     color: COLORS.primary
                 }}>
-                    12h 40m
+                    {Math.floor(Math.random() * 24)} : {Math.floor(Math.random() * 24)} : {Math.floor(Math.random() * 24)} 
                 </Text>
         </View>
     ) 
